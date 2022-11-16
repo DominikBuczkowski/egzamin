@@ -1,0 +1,8 @@
+sudo dmidecode -t memory ram
+lshw -c memory | grep "size: ?GiB" > ram.txt
+
+
+
+This should do:
+
+sudo lshw -short -C memory | grep mhz
